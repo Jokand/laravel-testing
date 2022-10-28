@@ -16,10 +16,10 @@
             <div class="container-fluid">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="#" class='nav-link menu-link menu-link__active'>Главная страница</a>
+                        <a href="{{ route('home')}}" class="nav-link menu-link {{  $mainLink }}">Главная страница</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class='nav-link menu-link'>Каталог статей</a>
+                        <a href="{{ route('article.index')}}" class="nav-link menu-link {{ $articleLink }}">Каталог статей</a>
                     </li>
                 </ul>
                 <a href="https://github.com/Jokand" class="d-flex justify-content-end">
